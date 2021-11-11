@@ -366,7 +366,8 @@ fill: var(var(--clients-section-color));
 
 .team-networks{
   display: flex;
-  padding: 0 32px;
+  justify-content: center;
+  align-items: center;
   margin-top: 16px;
 }
 
@@ -393,18 +394,6 @@ fill: var(--clients-section-color);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .clients {
   display: flex;
 }
@@ -428,9 +417,12 @@ fill: var(--clients-section-color);
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-right: 30px;
+  
   border-radius: 4px;
   fill: var(--clients-section-color);
+}
+.clients-item:not(:last-child){
+  margin-right: 30px;
 }
 
 .clients-link:hover,
